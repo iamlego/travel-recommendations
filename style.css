@@ -1,19 +1,43 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
 }
 
+/* Navigation Bar */
 nav {
-    background-color: #333;
-    padding: 10px 20px;
+    background-color: rgba(40, 48, 51, 0.8); /* Dark grey background with transparency */
+    padding: 10px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: absolute; /* Make navbar position absolute */
+    width: 100%; /* Ensure it spans the full width */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 40px; /* Adjust the height of the logo */
+    margin-right: 10px;
+}
+
+nav .logo h1 {
+    color: white;
+    font-size: 1.6em;
+    font-weight: 500;
 }
 
 nav ul {
@@ -28,12 +52,13 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 400;
+    font-size: 1em;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #f0f0f0;
+    color: #ffdd57; /* Gold color on hover */
 }
 
 .search-container {
@@ -42,39 +67,202 @@ nav ul li a:hover {
 }
 
 .search-container input[type="text"] {
-    padding: 5px;
-    font-size: 1em;
+    padding: 10px;
+    font-size: 0.9em;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-right: 10px;
+    border-radius: 20px 0 0 20px;
+    width: 300px;
+    outline: none;
 }
 
 .search-container button {
-    padding: 5px 10px;
-    font-size: 1em;
+    padding: 10px 15px;
+    font-size: 0.9em;
     border: none;
     cursor: pointer;
-    margin-right: 10px;
+    border-radius: 0 20px 20px 0;
 }
 
 .search-container button[type="button"] {
-    background-color: #4CAF50;
+    background-color: #006666;
     color: white;
-    border-radius: 4px;
     transition: background-color 0.3s ease;
 }
 
 .search-container button[type="button"]:hover {
-    background-color: #45a049;
+    background-color: #004c4c;
 }
 
 .search-container button[type="reset"] {
-    background-color: #f44336;
+    background-color: #006666;
     color: white;
-    border-radius: 4px;
+    margin-left: 5px;
+    border-radius: 20px;
     transition: background-color 0.3s ease;
 }
 
 .search-container button[type="reset"]:hover {
-    background-color: #e53935;
+    background-color: #004c4c;
+}
+
+/* Hero Section */
+.hero-section{
+    background-image: url('background-image.jpeg'); /* Replace with the actual background image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Social Icons */
+.social-icons {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons a {
+    margin: 10px 0;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Hero Content */
+.hero-content{
+    max-width: 500px;
+    margin-left: 120px;
+}
+
+.hero-content h2 {
+    font-size: 3.5em;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: #ffffff; /* White color for the text */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Black shadow with opacity for contrast */
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black background */
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 100%; /* Limits the text width to prevent it from stretching too far */
+    margin: 10px 0; /* Adds spacing between lines */
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #ffdd57;
+    color: #283033;
+    border: none;
+    border-radius: 50px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e6c348;
+}
+
+.about-us{
+    /* margin-top: 100px; */
+    background-image: url('background-image.jpeg'); /* Replace with the actual background image path */
+    /* background-size: cover; */
+    background-position: center;
+    height: 100vh;
+    color: white;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 0 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section-as{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section-as {
+    background-image: url('background-image.jpeg'); /* Replace with the actual background image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    /* position: relative; */
+    z-index: 1;
+}
+
+.hero-content-as {
+    /* max-width: 500px; */
+    /* margin-left: 20px; */
+    margin-top: 10vh;
+
+}
+
+.company-desc{
+
+    margin: 10vh;
+
+}
+
+
+/* ----------------------x-----------------x----------------------- */
+
+.team {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 10px;
+    color: white;
+    max-width: 100%;
+    margin: auto;
+}
+
+.team h4 {
+    font-size: 24px;
+    margin-right: 20px; /* Space between the heading and the team list */
+    flex-shrink: 0; /* Prevent the h4 from shrinking */
+}
+
+.team-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between items */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1; /* Allow the team list to take up remaining space */
+}
+
+.team-list li {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for list items */
+    border-radius: 8px;
+    padding: 10px;
+    /* text-align: center; */
+    font-size: 18px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.team-list li:hover {
+    transform: translateY(-10px); /* Slight lift effect on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Change background on hover */
 }
