@@ -9,6 +9,63 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+        /* Form */
+        form {
+            width: 600px; /* Limit the width to 500px */
+            padding: 20px; /* Padding inside the form */
+            background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+            border-radius: 10px; /* Rounded corners */
+            backdrop-filter: blur(10px); /* Background blur effect */
+            color: #000000; /* White text color */
+            margin-left: 150px;
+        }
+
+        /* Labels */
+        form label {
+            display: block; /* Display labels as block elements */
+            font-size: 1.2em; /* Larger font size */
+            margin-bottom: 10px; /* Space between label and input */
+            font-weight: bold; /* Bold text for labels */
+        }
+
+        /* Inputs */
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="textarea"] {
+            width: 100%; /* Full width of the form */
+            padding: 10px; /* Padding inside the input fields */
+            margin-bottom: 20px; /* Space between inputs */
+            border: 1px solid rgba(255, 255, 255, 0.5); /* Semi-transparent white border */
+            border-radius: 5px; /* Rounded corners */
+            background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+            color: #fff; /* White text color */
+            font-size: 1em; /* Regular font size */
+            box-sizing: border-box; /* Ensure padding doesn't affect width */
+        }
+
+        form input[type="textarea"] {
+            height: 150px; /* Fixed height for textarea */
+        }
+
+        /* Submit Button */
+        form input[type="submit"] {
+            width: 100%; /* Full width of the form */
+            padding: 15px; /* Padding inside the button */
+            border: none; /* No border */
+            border-radius: 5px; /* Rounded corners */
+            background-color: #006666; /* Teal background color */
+            color: white; /* White text color */
+            font-size: 1.2em; /* Larger font size */
+            cursor: pointer; /* Pointer cursor on hover */
+            margin-top: 10px; /* Space above the button */
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #004c4c; /* Darker teal on hover */
+        }
+
+    </style>
 </head>
 <body>
     <div>
@@ -33,6 +90,26 @@
                     <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
                     <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
                     <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="hero-content" style="display: flex;">
+                    <div id="left">
+                        <h2 style="font-size:90px">CONTACT US</h2>
+                        <h5 style="font-size:20px">Get in Touch!</h2>
+                    </div>
+        
+                    <div id="right" class="card-container">
+                        <form action="submit">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Enter your Name">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Enter your E-mail">
+                            <label for="message">Message</label>
+                            <input type="textarea" id="message">
+                        </form>
+                    </div>
+                    
                 </div>
             </div>
         </div>
