@@ -179,9 +179,6 @@ nav ul li a:hover {
 }
 
 .about-us{
-    /* margin-top: 100px; */
-    /* background-image: url('background-image.jpeg'); Replace with the actual background image path */
-    /* background-size: cover; */
     background-position: center;
     height: 100vh;
     color: white;
