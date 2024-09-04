@@ -39,10 +39,11 @@ function executeSearch() {
                 result.forEach((des) => {
                     console.log(des);
                     let curr_res = document.createElement('div');
-                    curr_res.innerHTML =  `<div class="card" style="width: 250px; padding: 15px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); background-color: white;">
-                                            <h3>${des.name}</h3>
-                                            <img src="${des.imageUrl}" alt="${des.name}" style="width: 100%; height: auto; border-radius: 4px;">
-                                            <p>${des.description}</p></div>`
+                    curr_res.innerHTML =  `<div class="card">
+                        <h3>${des.name}</h3>
+                        <img src="${des.imageUrl}" alt="${des.name}">
+                        <p>${des.description}</p>
+                         </div>`
                     res_a.appendChild(curr_res);
                 })
 

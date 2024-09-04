@@ -4,10 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TravelBloom</title>
-    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
+    <div>
+        <div class="navbar">
+            <nav>
+                <div class="logo">
+                    <img src="airplane-icon.png" alt="Airplane Logo">
+                    <h1>TRAVEL BLOOM</h1>
+                </div>
+                <ul>
+                    <li><a href="./travel_recommendation.html">HOME</a></li>
+                    <li><a href="./about-us.html">ABOUT US</a></li>
+                    <li><a href="./contact-us.html">CONTACT US</a></li>
+                </ul>
+                <div class="search-container">
+                    <input type="text" id="search" placeholder="Enter a destination or keyword">
+                    <button type="button" onclick="executeSearch()">SEARCH</button>
+                    <button type="reset" onclick="resetSearch()">CLEAR</button>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container">
+            <div class="fixed-left">
+                <div style="margin-left: 50px;" class="social-icons">
+                    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="hero-content" style="display: flex;">
+                    <div id="left">
+                        <h2 style="font-size:90px">DISCOVER</h2>
+                        <h2 style="font-size:90px">IMAGINE</h2>
+                        <h2 style="font-size:90px">JOURNEY</h2>
+                         <p>It inspires the discovery of uncharted places, celebrates diverse cultures and scenery, while chasing the perfect journey that stirs the soul and sparks a sense of adventure.</p>            
+                    </div>
+        
+                    <div id="right" class="card-container">
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- <nav>
         <div class="logo">
             <img src="airplane-icon.png" alt="Airplane Logo">
             <h1>TravelBloom</h1>
@@ -22,39 +80,43 @@
             <button type="button" onclick="executeSearch()">Search</button>
             <button type="reset" onclick="resetSearch()">Clear</button>
         </div>
-    </nav>
-    
-    <div class="hero-section">
-        <div style="margin-left: 50px;" class="social-icons">
+    </nav> -->
+
+
+    <div class="section-hero">
+
+    </div>
+
+
+    <!-- <div class="hero-section"> -->
+        <!-- <div style="margin-left: 50px;" class="social-icons">
             <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
             <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
             <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
             <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
-        </div>
-        <div class="hero-content" style="display: flex;">
+        </div> -->
+        <!-- <div class="hero-content" style="display: flex;">
             <div id="left">
                 <h2 style="font-size:90px">DISCOVER</h2>
                 <h2 style="font-size:90px">IMAGINE</h2>
                 <h2 style="font-size:90px">JOURNEY</h2>
                  <p>It inspires the discovery of uncharted places, celebrates diverse cultures and scenery, while chasing the perfect journey that stirs the soul and sparks a sense of adventure.</p>            
             </div>
-            <!-- <div id="right" style="margin-left:10px; display:flex;flex-direction:columns">
-                
+
+            <div id="right" class="card-container">
+
             </div> -->
-
-            <div id="right" style="margin-left: 10px; display: flex; flex-wrap: wrap; gap: 15px;">
-
-            </div>
+            
             
             
 
     <!-- </div id="test">
      
     <div> -->
-        </div>
+        <!-- </div> -->
         
 
-    </div>
+    <!-- </div> -->
 
     <script src="main.js"></script>
 
