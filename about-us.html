@@ -3,87 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>TravelBloom</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <nav>
-        <div class="logo">
-            <img src="airplane-icon.png" alt="Airplane Logo">
-            <h1>TravelBloom</h1>
-        </div>
-        <ul>
-            <li><a href="./travel_recommendation.html">Home</a></li>
-            <li><a href="./about-us.html">About Us</a></li>
-            <li><a href="#contact-us">Contact Us</a></li>
-        </ul>
-        <div class="search-container">
-            <input type="text" id="search" placeholder="Enter a destination or keyword">
-            <button type="button" onclick="executeSearch()">Search</button>
-            <button type="reset" onclick="resetSearch()">Clear</button>
-        </div>
-    </nav>
-
-    <div class="hero-section-as">
-        <div class="hero-content-as">
-            <div class="company-desc">
-                <h2 style="font-size:70px">ABOUT US</h2>
-                <p style="font-size:20px; word-spacing:5px; line-height:1.8em" >Welcome to Our Company!<br> We are a team of passionate individuals dedicated to providing excellent services/products to our customers. 
-                    Our mission is to provide the best experience for people traveling to different destinations around the world. 
-                    Our values include integrity, innovation, customer satisfaction, and teamwork. 
-                    We believe in putting our customers first and working together to achieve our goals. 
-                    Feel free to explore our website to learn more about what we offer!
-                </p>
-            </div>
-            <div class="team">
-                <div style="display: flex; flex-direction:column;margin-right: 20px;">
-                    <p style="padding: 10px;font-size: 50px;">Our</p>
-                    <p style="padding: 10px;font-size: 50px;">Team </p>
+    <div>
+        <div class="navbar">
+            <nav>
+                <div class="logo">
+                    <img src="airplane-icon.png" alt="Airplane Logo">
+                    <h1>TRAVEL BLOOM</h1>
                 </div>
-                
-                <ul class="team-list">
-                    <li><a href="#" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
-                        <img src="./ceo-icon.jpg" alt="Team Member Icon" style="border-radius: 50%; width:40px; height:40px">
-                            <div>
-                                <h6 style="margin: 10px; font-size:25px;">Robert <br>Anderson</h6>
-                                <p style="margin: 10px; font-size:12px; word-spacing:5px;line-height:1.8em">Robert oversees the overall strategy and operations of the company, ensuring that the business stays on course to achieve its goals. He drives the company's vision and leads the executive team in making critical business decisions.</p>
-                                <button style="background-color: #97bee2; color: rgb(5, 4, 4); border: none; padding: 5px 10px; border-radius: 10px; cursor: default; pointer-events: none;width:100%">
-                                    CEO
-                                </button>
-                            </div>
-                        </a>
-                    </li>
-                    <li><a href="#" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
-                        <img src="./cto-icon.jpg" alt="Team Member Icon" style="border-radius: 50%; width:40px; height:40px">
-                            <div>
-                                <h6 style="margin: 10px; font-size:25px;">Emily  <br>Martinez</h6>
-                                <p style="margin: 10px; font-size:12px; word-spacing:5px;line-height:1.8em"> Emily leads the technology department, spearheading innovation and overseeing the development of cutting-edge travel solutions. She ensures that the company's tech infrastructure is robust, scalable, and aligned with business objectives.</p>
-                                <button style="background-color: #97bee2; color: rgb(5, 4, 4); border: none; padding: 5px 10px; border-radius: 10px; cursor: default; pointer-events: none;width:100%">
-                                    CTO
-                                </button>
-                            </div>
-                        </a>
-                    </li>
-                    <li><a href="#" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
-                        <img src="./sales-icon.jpg" alt="Team Member Icon" style="border-radius: 50%; width:40px; height:40px">
-                            <div>
-                                <h6 style="margin: 10px; font-size:25px;">Michael <br>Carter</h6>
-                                <p style="margin: 10px; font-size:12px; word-spacing:5px;line-height:1.8em">Michael is responsible for driving sales growth by building relationships with clients and developing effective sales strategies. He leads the sales team to meet targets and expand the company's market presence.</p>
-                                <button style="background-color: #97bee2; color: rgb(5, 4, 4); border: none; padding: 5px 10px; border-radius: 10px; cursor: default; pointer-events: none;width:100%">
-                                    Head of Sales
-                                </button>
-                            </div>
-                        </a>
-                    </li>
+                <ul>
+                    <li><a href="./travel_recommendation.html">HOME</a></li>
+                    <li><a href="./about-us.html">ABOUT US</a></li>
+                    <li><a href="./contact-us.html">CONTACT US</a></li>
                 </ul>
-            </div>
-        
+            </nav>
         </div>
+
+        <div class="container">
+            <div class="fixed-left">
+                <div style="margin-left: 50px;" class="social-icons">
+                    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+                </div>
+            </div>
+            <div class="hero-section-as">
+                <div class="hero-content-as">
+                    <div class="company-desc">
+                        <h2 style="font-size:70px">ABOUT US</h2>
+                        <p style="font-size:20px; word-spacing:5px; line-height:1.8em;" >Welcome to Our Company!<br> We are a team of passionate individuals dedicated to providing excellent services/products to our customers. 
+                            Our mission is to provide the best experience for people traveling to different destinations around the world. 
+                            Our values include integrity, innovation, customer satisfaction, and teamwork. 
+                            We believe in putting our customers first and working together to achieve our goals. 
+                            Feel free to explore our website to learn more about what we offer!
+                        </p>
+                    </div>
+                    <div class="team">
+                        <div style="display: flex; flex-direction:column;margin-right: 20px;">
+                            <p style="padding: 10px;font-size: 50px;">Our</p>
+                            <p style="padding: 10px;font-size: 50px;">Team </p>
+                        </div>
+                        
+                        <ul class="team-list">
+                            <li><a href="#" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+                                <img src="./ceo-icon.jpg" alt="Team Member Icon" style="border-radius: 50%; width:40px; height:40px">
+                                    <div>
+                                        <h6 style="margin: 10px; font-size:35px;">Robert <br>Anderson</h6>
+                                        <p style="margin: 10px; font-size:18px; word-spacing:2px;line-height:1.2em">Robert oversees the overall strategy and operations of the company, ensuring that the business stays on course to achieve its goals. He drives the company's vision and leads the executive team in making critical business decisions.</p>
+                                        <button style="background-color: #97bee2; color: rgb(5, 4, 4); border: none; padding: 5px 10px; border-radius: 10px; cursor: default; pointer-events: none;width:100%">
+                                            CEO
+                                        </button>
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a href="#" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+                                <img src="./cto-icon.jpg" alt="Team Member Icon" style="border-radius: 50%; width:40px; height:40px">
+                                    <div>
+                                        <h6 style="margin: 10px; font-size:35px;">Emily  <br>Martinez</h6>
+                                        <p style="margin: 10px; font-size:18px; word-spacing:2px;line-height:1.2em"> Emily leads the technology department, spearheading innovation and overseeing the development of cutting-edge travel solutions. She ensures that the company's tech infrastructure is robust, scalable, and aligned with business objectives.</p>
+                                        <button style="background-color: #97bee2; color: rgb(5, 4, 4); border: none; padding: 5px 10px; border-radius: 10px; cursor: default; pointer-events: none;width:100%">
+                                            CTO
+                                        </button>
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a href="#" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+                                <img src="./sales-icon.jpg" alt="Team Member Icon" style="border-radius: 50%; width:40px; height:40px">
+                                    <div>
+                                        <h6 style="margin: 10px; font-size:35px;">Michael <br>Carter</h6>
+                                        <p style="margin: 10px; font-size:18px; word-spacing:2px;line-height:1.2em">Michael is responsible for driving sales growth by building relationships with clients and developing effective sales strategies. He leads the sales team to meet targets and expand the company's market presence.</p>
+                                        <button style="background-color: #97bee2; color: rgb(5, 4, 4); border: none; padding: 5px 10px; border-radius: 10px; cursor: default; pointer-events: none;width:100%">
+                                            Head of Sales
+                                        </button>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+
     </div>
-    
 
-    
-
-</body>
-</html>

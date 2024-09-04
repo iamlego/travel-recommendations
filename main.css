@@ -1,17 +1,19 @@
-/* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Cormorant Garamond", serif;
 }
 
+/* USE IT FOR CONTENT */
+
+/* font-family: "Playwrite CU", cursive; */
+
 body {
-    background-color: #f4f4f9;
+    /* background-color: #f4f4f9; */
     background-image: url('background-image.jpeg');
 }
 
-/* Navigation Bar */
 nav {
     background-color: rgba(40, 48, 51, 0.8); /* Dark grey background with transparency */
     padding: 10px 30px;
@@ -54,13 +56,14 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: 400;
-    font-size: 1em;
+    font-size: 1.1em;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
     color: #ffdd57; /* Gold color on hover */
 }
+
 
 .search-container {
     display: flex;
@@ -69,7 +72,7 @@ nav ul li a:hover {
 
 .search-container input[type="text"] {
     padding: 10px;
-    font-size: 0.9em;
+    font-size: 1.1em;
     border: 1px solid #ccc;
     border-radius: 20px 0 0 20px;
     width: 300px;
@@ -78,7 +81,7 @@ nav ul li a:hover {
 
 .search-container button {
     padding: 10px 15px;
-    font-size: 0.9em;
+    font-size: 1.1em;
     border: none;
     cursor: pointer;
     border-radius: 0 20px 20px 0;
@@ -106,11 +109,14 @@ nav ul li a:hover {
     background-color: #004c4c;
 }
 
-/* Hero Section */
-.hero-section{
-    /* background-image: url('background-image.jpeg'); Replace with the actual background image path */
-    background-size: cover;
-    background-position: center;
+.fixed-left {
+    width: 10%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh; /* Full height to stay fixed on the side */
+    padding: 20px;
+    box-sizing: border-box;
     height: 100vh;
     color: white;
     display: flex;
@@ -140,28 +146,97 @@ nav ul li a:hover {
     height: 30px;
 }
 
-/* Hero Content */
-.hero-content{
-    max-width: 500px;
-    margin-left: 120px;
+.container {
+    display: flex;
+    flex-direction: row;
 }
 
-.hero-content h2 {
-    font-size: 3.5em;
-    line-height: 1.2;
+.main-content{
+    margin-top: 10%;
+    padding-left: 25px;
 }
 
-.hero-content p {
-    margin: 20px 0;
-    font-size: 1.2em;
-    color: #ffffff; /* White color for the text */
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Black shadow with opacity for contrast */
-    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black background */
-    padding: 10px;
-    border-radius: 5px;
-    max-width: 100%; /* Limits the text width to prevent it from stretching too far */
-    margin: 10px 0; /* Adds spacing between lines */
+#left {
+    margin-top: 50px;
+    max-width: 40%;
 }
+#left p {
+    /* max-width: 50%; */
+    font-size: 30px;
+}
+
+
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    /* width: 45%; Card width less than half of the page */
+    margin: 10px auto; 
+    margin-right: 30px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    box-sizing: border-box; /* Ensure padding doesn't affect overall width */
+    margin-left: 10px;
+}
+
+.card h3 {
+    margin-bottom: 10px; /* Space between the heading and image */
+    font-size: 1.5em; /* Slightly larger font size for the heading */
+}
+
+.card img {
+    width: 100%;
+    height: 500px;
+    /* max-width: 100px; */
+    /* height: auto; Maintain aspect ratio */
+    /* max-width: 300px; Fix maximum width of the image */
+    
+    display: block; /* Ensure image is treated as a block element */
+    margin: 0 auto 15px; /* Center the image and add space below */
+    border-radius: 4px; /* Slight rounding of image corners */
+}
+
+.card p {
+    font-size: 1em; /* Regular font size for the description */
+    line-height: 1.5; /* Improved readability */
+    margin-top: 10px; /* Space between the image and the paragraph */
+}
+
+
+/* Hero Section */
+/* .hero-section{ 
+    background-image: url('background-image.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    position: relative;
+    z-index: 1;
+} */
+
+/* Social Icons */
+.social-icons {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons a {
+    margin: 10px 0;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
 
 .cta-button {
     padding: 15px 30px;
@@ -184,7 +259,7 @@ nav ul li a:hover {
     /* background-size: cover; */
     background-position: center;
     height: 100vh;
-    color: white;
+    color: rgb(0, 0, 0);
     /* display: flex; */
     /* justify-content: space-between; */
     align-items: center;
@@ -199,11 +274,11 @@ nav ul li a:hover {
 }
 
 .hero-section-as {
-    background-image: url('background-image.jpeg'); /* Replace with the actual background image path */
+    /* background-image: url('background-image.jpeg'); Replace with the actual background image path */
     background-size: cover;
     background-position: center;
     height: 100vh;
-    color: white;
+    color: rgb(0, 0, 0);
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
@@ -219,9 +294,9 @@ nav ul li a:hover {
 }
 
 .company-desc{
-
-    margin: 10vh;
-
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 30px;
 }
 
 
@@ -235,7 +310,8 @@ nav ul li a:hover {
     border-radius: 10px;
     color: white;
     max-width: 100%;
-    margin: auto;
+    margin: 40px;
+    /* margin: auto; */
 }
 
 .team h4 {
@@ -259,7 +335,7 @@ nav ul li a:hover {
     border-radius: 8px;
     padding: 10px;
     /* text-align: center; */
-    font-size: 18px;
+    font-size: 28px;
     transition: transform 0.3s, background-color 0.3s;
 }
 
@@ -268,39 +344,3 @@ nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.2); /* Change background on hover */
 }
 
-
-/* Card Container */
-#right {
-    margin-left: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-/* Card Styles */
-.card {
-    width: 250px;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    background-color: white;
-    overflow: hidden;
-}
-
-.card h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 10px;
-}
-
-.card p {
-    font-size: 1em;
-    color: #333;
-    margin-bottom: 0;
-}
